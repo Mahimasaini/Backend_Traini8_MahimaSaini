@@ -24,7 +24,7 @@ A RESTful API built with Spring Boot for managing [entities, e.g., Users, Produc
 2.  **Navigate to the project directory:**
   ```bash
     cd [project directory]
-    ```
+ ```
 3.  **Build the project (using Maven):**
 
     ```bash
