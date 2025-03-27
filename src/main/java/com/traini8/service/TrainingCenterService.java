@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.validation.annotation.Validated;
 
 import com.traini8.dao.TrainingCenterDAO;
 import com.traini8.dto.TrainingCenterRequestDTO;
@@ -17,6 +18,7 @@ import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
+@Validated
 public class TrainingCenterService {
 
 	@Autowired

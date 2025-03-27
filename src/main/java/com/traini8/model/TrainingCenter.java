@@ -12,12 +12,14 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @Entity
 @NoArgsConstructor
+@Table(name = "training_center")
 public class TrainingCenter {
 
 	@Id
@@ -43,10 +45,10 @@ public class TrainingCenter {
 	@Column(name = "contact_phone")
 	private String contactPhone;
 
-	@OneToOne(mappedBy = "training_center")
+	@OneToOne(mappedBy = "trainingCenter")
 	private Address address;
 
-	@OneToMany(mappedBy = "training_center")
+	@OneToMany(mappedBy = "trainingCenter")
 	private List<CoursesOffered> coursesOfferedList;
 
 	public TrainingCenter(TrainingCenterRequestDTO requestDTO) {
